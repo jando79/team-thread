@@ -13,3 +13,5 @@ async function getThreads(city) {
     printError(response, city);
   }
 }
+
+// <!-- const favoriteColor = document.getElementById("color").value; -->

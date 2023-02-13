@@ -1,10 +1,10 @@
 # Threads
 
-##### By _David Jandron_ & _Eliot Gronstal_ & _Elizabeth Luckie_ & _Mesha Devan_ & _Molly Donegan_ & _Sarah Andyshak_
+##### By _David Jandron_ & _Eliot Gronstal_ & _E. Luckie_ & _Mesha Devan_ & _Molly Donegan_ & _Sarah Andyshak_
 
 #### _Description_
 
-_A web application that helps the user _
+_A web application that helps the user cordinate..._
 
 ## Technologies Used
 
@@ -36,4 +36,4 @@ _A web application that helps the user _
 
 * _MIT_
 
-Copyright (c) _2023_  _David Jandron_ & _Eliot Gronstal_ & _Elizabeth Luckie_ & _Mesha Devan_ & _Molly Donegan_ & _Sarah Andyshak_
+Copyright (c) _2023_  _David Jandron_ & _Eliot Gronstal_ & _E. Luckie_ & _Mesha Devan_ & _Molly Donegan_ & _Sarah Andyshak_

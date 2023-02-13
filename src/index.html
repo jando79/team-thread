@@ -6,35 +6,50 @@
 
   <body>
     <h1>Place Holder</h1>
-
-    <label for="color">What color are you looking for?</label>
-    <input id="color" type="color">
-    <br><br>
+    <div id="color-pick1">
+    <label for="color1">What key color are you looking for?</label>
+    <input id="color1" type="color">
+    </div>
+    <div id="color-pick2">
+    <label for="color2">What secondary color are you looking for?</label>
+    <input id="color2" type="color">
+    </div>
+    <div id="color-pick3">
+    <label for="color3">What tertiary color are you looking for?</label>
+    <input id="color3" type="color">
+    </div>
 
     <form id="clothing">
-      <label for="shoe-size">Shoe Size:</label><br>
-      <input type="number" id="shoes" name="shoe-size"><br>
-      <label for="hat-size">Hat Size</label><br>
-      <input type="number" id="hat-fit" name="hat-size"><br>
+      <label for="shoe-size">Shoe Size:</label>
       <br>
-      <p>Size</p>
+      <input type="number" id="shoes" name="shoe-size">
+      <br>
+      <label for="hat-size">Hat Size</label>
+      <br>
+      <input type="number" id="hat-fit" name="hat-size">
+      <br><br>
+      <label for="clothing size">Clothing Size:</label>
       <select id="clothing size">
         <option>Large</option>
         <option>Medium</option>
         <option>Small</option>
-      </select><br>
-    
-
-    <label for="clothing options">Choose gear:</label>
-    <select name="clothing" id="clothes">
-      <option value="shoes">Shoes</option>
-      <option value="hats">Hats</option>
-      <option value="inner-wear">Inner Wear</option>
-      <option value="outer-wear">Outer Wear</option>
-    </select>
+      </select>
+      <br><br><br>
+      <fieldset>
+        <div class="gear">
+          <p>Choose gear:</p>
+          <input type="checkbox" class="check" name="clothing" value="1" id="1">
+          <label for="shoes">Shoes</label>
+          <input type="checkbox" class="check" name="clothing" value="2" id="2">
+          <label for="hats">Hats</label>
+          <input type="checkbox" class="check" name="clothing" value="3" id="3">
+          <label for="inner">Inner Wear</label>
+          <input type="checkbox" class="check" name="clothing" value="4" id="4">
+          <label for="outer">Outer Wear</label>
+        </div>
+      </fieldset>
     <br><br>
-
-  <button type="submit">Submit Selection</button>
+    <button type="submit">Submit Selection</button>
   
   </form>
   <br><br>
@@ -44,11 +59,11 @@
   <div id="hat-selection" class="hidden">
     <form>
       <p>Head Wear</p>
-        <input type="radio" name="hat1" value="fitted" id="fit" checked>
+        <input type="radio" name="hat1" value="fit" id="fit" checked>
         <label for="fit">Fitted</label><br>
-        <input type="radio" name="hat2" value="snap" id="snap-back">
+        <input type="radio" name="hat2" value="snap-back" id="snap-back">
         <label for="snap-back">Snap Back</label><br>
-        <input type="radio" name="hat3" value="knit" id="knit-cap">
+        <input type="radio" name="hat3" value="knit-cap" id="knit-cap">
         <label for="knit-cap">Beanie</label><br><br>
       <button type="submit">Submit Selection</button>
     </form>
@@ -57,13 +72,13 @@
   <div id="inner-wear-selection" class="hidden">
     <form>
       <p>Inner Wear</p>
-        <input type="radio" name="inner1" value="buttons" id="button-up" checked>
+        <input type="radio" name="inner1" value="button-up" id="button-up" checked>
         <label for="button-up">Button up</label><br>
-        <input type="radio" name="inner2" value="pullover" id="pulloverShirt">
+        <input type="radio" name="inner2" value="pullover" id="pullover">
         <label for="pulloverShirt">Pullover</label><br>
-        <input type="radio" name="inner3" value="sleeve1" id="long-sleeve">
+        <input type="radio" name="inner3" value="long-sleeve" id="long-sleeve">
         <label for="long-sleeve">Long-sleeve</label><br>
-        <input type="radio" name="inner4" value="sleeve2" id="short-sleeve">
+        <input type="radio" name="inner4" value="short-sleeve" id="short-sleeve">
         <label for="short-sleeve">Short-sleeve</label><br><br>
       <button type="submit">Submit Selection</button>
     </form>
@@ -71,13 +86,15 @@
 
   <div id="outer-wear-selection" class="hidden">
     <form>
-      <p>Head Wear</p>
-        <input type="radio" name="hat1" value="fitted" id="fit" checked>
-        <label for="fit">Fitted</label><br>
-        <input type="radio" name="hat3" value="snap" id="snap-back">
-        <label for="snap-back">Snap Back</label><br>
-        <input type="radio" name="hat2" value="knit" id="knit-cap">
-        <label for="knit-cap">Beanie</label><br><br>
+      <p>Outer Wear</p>
+        <input type="radio" name="outer1" value="jacket" id="jacket" checked>
+        <label for="jacket">Jacket</label><br>
+        <input type="radio" name="outer2" value="vest" id="vest">
+        <label for="vest">Vest</label><br>
+        <input type="radio" name="outer3" value="coat" id="coat">
+        <label for="coat">Coat</label><br><br>
+        <input type="radio" name="outer4" value="hoodie" id="hoodie">
+        <label for="hoodie">Hooded Sweatshirt</label><br>
       <button type="submit">Submit Selection</button>
     </form>
   </div>

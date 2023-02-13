@@ -1,6 +1,8 @@
 body {
   background-color: blanchedalmond;
-  margin: 20px;
+  margin: 20px;  
+  padding: 8px 8px 0px;
+
 }
 
 h1 {
@@ -23,8 +25,43 @@ h1 {
     font-weight: 550;
 } 
 
+#clothing select {
+  margin-right: 0.2em;
+  font-family: Arial;
+  font-style: italic;
+  font-weight: 550;
+}
+#clothing-size {
+  font-family: Arial;
+  font-style: italic;
+  font-weight: 550;
+}
+
 #color label {
   font-family: Arial;
   font-style: italic;
   font-weight: 550;
 }
+
+fieldset {
+  overflow: hidden
+  }
+
+  .gear {
+    float: left;
+    clear: none;
+  }
+
+  label {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+  }
+
+  input[type=checkbox],
+  input.check {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+  }

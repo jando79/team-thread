@@ -1,20 +1,27 @@
 body {
   background-color: blanchedalmond;
   margin: 20px;  
-  padding: 8px 8px 0px;
-
 }
 
 h1 {
   text-align: center;
+  padding-bottom: 60px;
   font-size: 32px;
   font-weight: bold;
   font-family: Helvetica;
 }
 
-#clothing input {
-    display: block;
-    margin-bottom: 0.2em;
+#color-pick label {
+  display: inline-block;
+  clear: left;  
+  width: 350px;
+  font-family: Arial;
+  font-style: italic;
+  font-weight: 550;
+}
+
+#color-pick input {
+  display: inline-block;
 }
 
 #clothing label {
@@ -25,6 +32,12 @@ h1 {
     font-weight: 550;
 } 
 
+#clothing input {
+    display: inline-block;
+    margin-bottom: 0.2em;
+}
+
+
 #clothing select {
   margin-right: 0.2em;
   font-family: Arial;
@@ -32,12 +45,6 @@ h1 {
   font-weight: 550;
 }
 #clothing-size {
-  font-family: Arial;
-  font-style: italic;
-  font-weight: 550;
-}
-
-#color label {
   font-family: Arial;
   font-style: italic;
   font-weight: 550;

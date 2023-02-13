@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-      <title></title>
-    </head>
-    <body>
+  <head>
+    <title>Team Thread</title>
+  </head>
+
+  <body>
+    <h1></h1>
+
+    <form>
+      <label for="shoe-size">Shoe Size:</label><br>
+      <input type="shoe-size" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname">
+
+    <label for="clothing options">Choose gear:</label>
+    <select name="clothing" id="clothes" form="clothing-form">
+      <option value="shoes">Shoes</option>
+      <option value="hats">Hats</option>
+      <option value="inner-wear">Inner Wear</option>
+      <option value="outer-wear">Outer Wear</option>
+  </select>
+
+  <label for="color">What color are you looking for?</label>
+  <input id="color" type="color">
+  <!-- const favoriteColor = document.getElementById("color").value; -->
+
+  <div id="results-div"></div>
+
       
     </body>
     </html>

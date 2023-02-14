@@ -17,7 +17,7 @@ function getPalette(color1, color2, color3) {
   request.onreadystatechange = function() {
     let palette = JSON.parse(request.responseText).result;
     if(request.readyState == 4 && request.status == 200) {
-      printElements();
+      printElements(palette);
       console.log(palette);
     } else {
       printError();
@@ -30,9 +30,8 @@ function getPalette(color1, color2, color3) {
 
 // UI Logic
 
-function printElements(apiResponse, city) {
-  document.querySelector('#showResponse').innerText = `The humidity in ${city} is ${apiResponse.main.humidity}%. 
-  The temperature in Kelvins is ${apiResponse.main.temp} degrees.`;
+function printElements(palette) {
+  let div = document.getElementById("results-div");
 }
 
 function printError(request, apiResponse, city) {
@@ -51,7 +50,7 @@ function hideResults() {
   document.getElementById("hat-selection").setAttribute("class", "hidden");
   document.getElementById("inner-wear-selection").setAttribute("class", "hidden");
   document.getElementById("outer-wear-selection").setAttribute("class", "hidden");
-  document.getElement ("shoes").setAttribute("class", "hidden");
+  document.getElementById("shoes").setAttribute("class", "hidden");
 }
 
 function handleFormSubmission(event) {
@@ -73,13 +72,13 @@ function handleFormSubmission(event) {
   // const shoeSize = parseInt(document.querySelector('#shoes').value);
   // const hatSize = parseInt(document.querySelector('#hat-fit').value);
   // const clothingSize = document.getElementById("clothing-size").value;
-  // const userSelections = document.querySelectorAll("input[name=gear]:checked");
-  // const userSelectionsArray = Array.from(userSelections);
+  const userSelections = document.querySelectorAll("input[name=gear]:checked");
+  const userSelectionsArray = Array.from(userSelections);
 
-  // userSelectionsArray.forEach(function(element) {
-    // add if...else for displaying checkbox links
+  userSelectionsArray.forEach(function(element) {
+   // add if...else for displaying checkbox links
 
-  // });
+  });
 }
 
 

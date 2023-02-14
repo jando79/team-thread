@@ -108,3 +108,7 @@ fieldset-gear {
     clear: none;
     margin: 2px 0 0 2px;
   }
+
+  .hidden {
+    display: none;
+  }

@@ -22,9 +22,10 @@ h1 {
 
 #color-pick input {
   display: inline-block;
+  padding: 2px 2px;
 }
 
-#clothing label {
+.clothing label {
     float: left;
     margin-right: 0.2em;
     font-family: Arial;
@@ -32,31 +33,66 @@ h1 {
     font-weight: 550;
 } 
 
-#clothing input {
+.clothing input {
     display: inline-block;
     margin-bottom: 0.2em;
 }
 
-
-#clothing select {
+.clothing select {
   margin-right: 0.2em;
   font-family: Arial;
   font-style: italic;
   font-weight: 550;
 }
-#clothing-size {
+.clothing-size {
   font-family: Arial;
   font-style: italic;
   font-weight: 550;
 }
+fieldset-head-toes{
+  overflow: hidden
+  }
 
-fieldset {
+  .shoe {
+    float: left;
+    clear: none;
+  }
+
+  .hat {
+    float: left;
+    clear: none;
+  }
+
+  label {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: 550;
+  }
+
+  input[type=number],
+  input.check {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+  }
+
+fieldset-gear {
   overflow: hidden
   }
 
   .gear {
     float: left;
     clear: none;
+  }
+
+  p {
+    font-family: Arial;
+    font-style: italic;
+    font-weight: 550;
   }
 
   label {

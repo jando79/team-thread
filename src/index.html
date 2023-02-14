@@ -6,6 +6,7 @@
 
   <body>
     <h1>Place Holder</h1>
+    <form id="clothing">
     <div id="color-pick">
       <div id="color-pick1">
         <label for="color1">What key color are you looking for?</label>
@@ -20,24 +21,27 @@
         <input id="color3" type="color">
       </div>
     </div>
-
-    <form id="clothing">
-      <label for="shoe-size">Shoe Size:</label>
-      <br>
-      <input type="number" id="shoes" name="shoe-size">
-      <br>
-      <label for="hat-size">Hat Size</label>
-      <br>
-      <input type="number" id="hat-fit" name="hat-size">
+    <fieldset id="head-toes">
+      <div class="shoe">
+        <label for="shoe-size">Shoe Size:</label>
+        <br>
+        <input type="number" id="shoes" name="shoe-size">
+      </div>
+      <div class="hat">
+        <label for="hat-size">Hat Size</label>
+        <br>
+        <input type="number" id="hat-fit" name="hat-size">
+      </div>
+    </fieldset>
       <br><br>
-      <label for="clothing size">Clothing Size:</label>
-      <select id="clothing size">
+      <label for="clothing-size">Clothing Size:</label>
+      <select id="clothing-size">
         <option>Large</option>
         <option>Medium</option>
         <option>Small</option>
       </select>
       <br><br><br>
-      <fieldset>
+      <fieldset id="gear">
         <div class="gear">
           <p>Choose gear:</p>
           <input type="checkbox" class="check" name="clothing" value="1" id="1">
@@ -50,6 +54,7 @@
           <label for="outer">Outer Wear</label>
         </div>
       </fieldset>
+    </div>
     <br><br>
     <button type="submit">Submit Selection</button>
   

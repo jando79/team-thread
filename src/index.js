@@ -12,13 +12,14 @@ function getPalette(color1, color2, color3) {
     input : `[${color1}, ${color2}, ${color3},"N","N"]`
   };
   
+  let palette;
   let request = new XMLHttpRequest();
   
   request.onreadystatechange = function() {
-    let palette = JSON.parse(request.responseText).result;
     if(request.readyState == 4 && request.status == 200) {
-      printElements(palette);
+      palette = JSON.parse(request.responseText).result;
       console.log(palette);
+      printElements(palette);
     } else {
       printError();
       console.log(`${request.status}`);
@@ -31,7 +32,7 @@ function getPalette(color1, color2, color3) {
 // UI Logic
 
 function printElements(palette) {
-  let div = document.getElementById("results-div");
+  document.getElementById("results-div").innerText = `Here's the palette ${palette}!!`;
 }
 
 function printError(request, apiResponse, city) {
@@ -72,13 +73,19 @@ function handleFormSubmission(event) {
   // const shoeSize = parseInt(document.querySelector('#shoes').value);
   // const hatSize = parseInt(document.querySelector('#hat-fit').value);
   // const clothingSize = document.getElementById("clothing-size").value;
-  const userSelections = document.querySelectorAll("input[name=gear]:checked");
-  const userSelectionsArray = Array.from(userSelections);
+  // const userSelections = document.querySelectorAll("input[name=gear]:checked");
+  // const userSelectionsArray = Array.from(userSelections);
 
-  userSelectionsArray.forEach(function(element) {
-   // add if...else for displaying checkbox links
+  // userSelectionsArray.forEach(function(element) {
+  // });
 
-  });
+  const gear = document.getElementsByClassName('clothing');
+  for (let i=0; i < gear.length; ++i) {
+      if (shoe[i].checked) {
+        inputTopping += parseInt(pizzaToppings[i].value);
+      }
+    }
+
 }
 
 

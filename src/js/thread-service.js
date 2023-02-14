@@ -1,16 +1,22 @@
-export default class ThreadService {  
-  static async getThreads(city) {
-    try {
-      const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`);
-      const jsonifiedResponse = await response.json();
-      if (!response.ok) {
-        const errorMessage = `${response.status} ${response.statusText}
-        ${jsonifiedResponse.message}`;
-        throw new Error(errorMessage);
-      }
-      return jsonifiedResponse;
-    } catch(error) {
-      return error;
+function getPalette() {
+  const url = "http://colormind.io/api/";
+  let data = {
+    model : "default",
+    input : [[44,43,44],[90,83,82],"N","N","N"]
+  }
+
+  let request = new XMLHttpRequest();
+
+  request.onreadystatechange = function() {
+    if(request.readyState == 4 && request.status == 200) {
+      let palette = JSON.parse(request.responseText).result;
+      console.log(palette);
+    } else {
+      console.log(`${request.status}`);
     }
   }
+
+  request.open("POST", url, true);
+  request.send(JSON.stringify(data));
+
 }

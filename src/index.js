@@ -9,20 +9,20 @@ function getPalette(color1, color2, color3) {
   const url = "http://colormind.io/api/";
   let data = {
     model : "default",
-    input : `[${color1}, ${color2}, ${color3},"N","N"]`
+    input :[color1, color2, color3,"N","N"]
   };
   
   let palette;
   let request = new XMLHttpRequest();
   
-  request.onreadystatechange = function() {
+  request.onreadystatechange = function(result) {
     if(request.readyState == 4 && request.status == 200) {
       palette = JSON.parse(request.responseText).result;
       console.log(palette);
       printElements(palette);
     } else {
       printError();
-      console.log(`${request.status}`);
+      console.log(`${request.status}${result}`);
     }
   };
   request.open("POST", url, true);
@@ -31,8 +31,17 @@ function getPalette(color1, color2, color3) {
 
 // UI Logic
 
-function printElements(palette) {
-  document.getElementById("results-div").innerText = `Here's the palette ${palette}!!`;
+function printElements(colours) {
+  document.getElementById("results-div").innerHTML = "";
+  for (let i = 0; i <= 4; i++) {
+    let div = document.createElement("div");
+    div.style.width = "100px";
+    div.style.height = "100px";
+    div.style.background="rgb("+colours[i].toString()+")";
+    div.innerHTML=colours[i];
+    div.style.color="white"
+    document.getElementById("results-div").appendChild(div);
+  }
 }
 
 function printError(request, apiResponse, city) {
@@ -43,8 +52,7 @@ function getRgb(hex) {
   const r = parseInt(hex.slice(1, 3), 16);
   const g = parseInt(hex.slice(3, 5), 16);
   const b = parseInt(hex.slice(5, 7), 16);
-  // return {r, g, b} // return an object
-  return [ r, g, b ];
+  return  [r, g, b ];
 }
 
 function hideResults() {
@@ -65,7 +73,9 @@ function handleFormSubmission(event) {
   let color1 = getRgb(keyColor);
   let color2 = getRgb(accentColor1);
   let color3 = getRgb(accentColor2);
+
   getPalette(color1, color2, color3);
+  
   console.log(color1);
   console.log(color2);
   console.log(color3);
@@ -79,15 +89,15 @@ function handleFormSubmission(event) {
   // userSelectionsArray.forEach(function(element) {
   // });
 
-  const gear = document.getElementsByClassName('clothing');
-  for (let i=0; i < gear.length; ++i) {
-      if (shoe[i].checked) {
-        inputTopping += parseInt(pizzaToppings[i].value);
-      }
-    }
+  //   const gear = document.getElementsByClassName('clothing');
+  //   for (let i=0; i < gear.length; ++i) {
+  //     if (shoe[i].checked) {
+  //       inputTopping += parseInt(pizzaToppings[i].value);
+  //     }
+  //   }
 
+  // }
 }
-
 
 
 window.addEventListener("load", function() {

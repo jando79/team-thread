@@ -18,6 +18,7 @@ function getPalette(color) {
     if(request.readyState == 4 && request.status == 200) {
       palette = JSON.parse(request.responseText).result;
       printElements(palette);
+      printPalette(palette);
     } else {
       // printError();
     }
@@ -29,11 +30,12 @@ function getPalette(color) {
 // UI Logic
 
 function printElements(colours) {
-  document.getElementById("results-div").innerHTML = "";
   let body = document.querySelector("body");
   body.style.background = "linear-gradient(rgb("+colours[0].toString()+"), white)";
-  let header = document.querySelector("h1");
-  header.style.background = "linear-gradient(to left top, rgb("+colours[0].toString()+"), white";
+  let title = document.getElementById("title");
+  title.style.background = "linear-gradient(to left top, rgb("+colours[1].toString()+"), white";
+  let submitButton = document.getElementById("submit-button");
+  submitButton.style.background = "linear-gradient(to left top, rgb("+colours[1].toString()+"), white";
   let colorPick = document.getElementById("color-pick");
   colorPick.style.background = "linear-gradient(to left top, rgb("+colours[2].toString()+"), white";
   let gearDiv = document.getElementById("gear");
@@ -49,6 +51,24 @@ function printElements(colours) {
   let outerWearDiv = document.getElementById("outer-wear-selection");
   outerWearDiv.style.background = "linear-gradient(to left top, rgb("+colours[4].toString()+"), white";
   }
+
+  function printPalette(palette) {
+    let resultsDiv = document.getElementById("results-div");
+    resultsDiv.innerHTML = "";
+    let h4 = document.createElement("h4");
+    h4.append("your personalized color palette:");
+    resultsDiv.prepend(h4);
+    for (let i = 0; i <= 4; i++) {
+      let div = document.createElement("div");
+      div.style.width = "100px";
+      div.style.height = "100px";
+      div.style.display = "inline-block";
+      div.style.background="rgb("+palette[i].toString()+")";
+      document.getElementById("results-div").appendChild(div);
+  }
+}
+
+  
 
 
 // function printError(request, apiResponse, city) {

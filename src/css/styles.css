@@ -10,13 +10,18 @@ body {
   margin: 20px;  
 }
 
+#results-div {
+  text-align: center;
+  padding:20px;
+}
 
-h1 {
+#title {
   text-align: center;
   padding-bottom: 60px;
-  font-size: 32px;
-  font-weight: bold;
-  font-family: Helvetica;
+  padding-top: 60px;
+  /* font-size: 32px; */
+  /* font-weight: bold;
+  font-family: Helvetica; */
 }
 
 #color-pick label {
@@ -45,43 +50,6 @@ h1 {
     display: inline-block;
     margin-bottom: 0.2em;
 }
-
-/* .clothing-size {
-  font-family: Arial;
-  font-style: italic;
-  font-weight: 550;
-}
-
-fieldset-head-toes{
-  overflow: hidden
-  }
-
-  .shoe {
-    float: left;
-    clear: none;
-  }
-
-  .hat {
-    float: left;
-    clear: none;
-  }
-
-  label {
-    float: left;
-    clear: none;
-    display: block;
-    padding: 0px 1em 0px 8px;
-    font-family: Arial;
-    font-style: italic;
-    font-weight: 550;
-  }
-
-  input[type=number],
-  input.check {
-    float: left;
-    clear: none;
-    margin: 0px 4em 0px 2px;
-  } */
 
 fieldset-gear {
   overflow: hidden

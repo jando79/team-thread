@@ -2,10 +2,6 @@
   display: none;
 }
 
-/* a {
-  display: block;
-} */
-
 body {
   background-color: blanchedalmond;
   margin: 20px;  
@@ -115,4 +111,10 @@ fieldset-gear {
     float: left;
     clear: none;
     margin: 2px 0 0 2px;
+  }
+
+  .thumbnail {
+    height: 100px;
+    width: 100px;
+    margin: auto;
   }

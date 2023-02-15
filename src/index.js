@@ -30,27 +30,24 @@ function getPalette(color) {
 
 function printElements(colours) {
   document.getElementById("results-div").innerHTML = "";
- 
-  // let body = document.querySelector("body");
-  // body.style.background = "linear-gradient(45deg, rgb("+colours[0].toString()+"))";
-
-
+  let body = document.querySelector("body");
+  body.style.background = "linear-gradient(rgb("+colours[0].toString()+"), white)";
   let header = document.querySelector("h1");
-  header.style.background = "rgb("+colours[0].toString()+")";
+  header.style.background = "linear-gradient(to left top, rgb("+colours[0].toString()+"), white";
   let colorPick = document.getElementById("color-pick");
-  colorPick.style.background = "rgb("+colours[2].toString()+")";
+  colorPick.style.background = "linear-gradient(to left top, rgb("+colours[2].toString()+"), white";
   let gearDiv = document.getElementById("gear");
-  gearDiv.style.background = "rgb("+colours[2].toString()+")";
+  gearDiv.style.background = "linear-gradient(to left top, rgb("+colours[2].toString()+"), white";
   let results = document.getElementById("results-div");
-  results.style.background = "rgb("+colours[3].toString()+")";
+  results.style.background = "linear-gradient(to left top, rgb("+colours[3].toString()+"), white";
   let shoeDiv = document.getElementById("shoe-selection");
-  shoeDiv.style.background = "rgb("+colours[4].toString()+")";
+  shoeDiv.style.background = "linear-gradient(to left top, rgb("+colours[4].toString()+"), white";
   let hatDiv = document.getElementById("hat-selection");
-  hatDiv.style.background = "rgb("+colours[4].toString()+")";
+  hatDiv.style.background = "linear-gradient(to left top, rgb("+colours[4].toString()+"), white";
   let innerWearDiv = document.getElementById("inner-wear-selection");
-  innerWearDiv.style.background = "rgb("+colours[4].toString()+")";
+  innerWearDiv.style.background = "linear-gradient(to left top, rgb("+colours[4].toString()+"), white";
   let outerWearDiv = document.getElementById("outer-wear-selection");
-  outerWearDiv.style.background = "rgb("+colours[4].toString()+")";
+  outerWearDiv.style.background = "linear-gradient(to left top, rgb("+colours[4].toString()+"), white";
   }
 
 

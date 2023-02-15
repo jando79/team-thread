@@ -44,9 +44,9 @@ function printElements(colours) {
   }
 }
 
-// function printError(request, apiResponse, city) {
-//   document.querySelector('#showResponse').innerText = `There was an error accessing the weather data for ${city}: ${request.status} ${request.statusText}: ${apiResponse.message}`;
-// }
+function printError() {
+  document.getElementById("results-div").innerText = `There was an error accessing the data.`;
+}
 
 function getRgb(hex) {
   const r = parseInt(hex.slice(1, 3), 16);

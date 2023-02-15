@@ -14,13 +14,13 @@ function getPalette(color) {
   let palette;
   let request = new XMLHttpRequest();
   
-  request.onreadystatechange = function(result) {
+  request.onreadystatechange = function() {
     if(request.readyState == 4 && request.status == 200) {
       palette = JSON.parse(request.responseText).result;
       printElements(palette);
       printPalette(palette);
     } else {
-      // printError();
+      printError();
     }
   };
   request.open("POST", url, true);
@@ -48,30 +48,27 @@ function printElements(colours) {
   innerWearDiv.style.background = "linear-gradient(to left top, rgb("+colours[4].toString()+"), white";
   let outerWearDiv = document.getElementById("outer-wear-selection");
   outerWearDiv.style.background = "linear-gradient(to left top, rgb("+colours[4].toString()+"), white";
-  }
+}
 
-  function printPalette(palette) {
-    let resultsDiv = document.getElementById("results-div");
-    resultsDiv.innerHTML = "";
-    let h4 = document.createElement("h4");
-    h4.append("your personalized color palette:");
-    resultsDiv.prepend(h4);
-    for (let i = 0; i <= 4; i++) {
-      let div = document.createElement("div");
-      div.style.width = "100px";
-      div.style.height = "100px";
-      div.style.display = "inline-block";
-      div.style.background="rgb("+palette[i].toString()+")";
-      document.getElementById("results-div").appendChild(div);
+function printPalette(palette) {
+  let resultsDiv = document.getElementById("results-div");
+  resultsDiv.innerHTML = "";
+  let h4 = document.createElement("h4");
+  h4.append("your personalized color palette:");
+  resultsDiv.prepend(h4);
+  for (let i = 0; i <= 4; i++) {
+    let div = document.createElement("div");
+    div.style.width = "100px";
+    div.style.height = "100px";
+    div.style.display = "inline-block";
+    div.style.background="rgb("+palette[i].toString()+")";
+    document.getElementById("results-div").appendChild(div);
   }
 }
 
-  
-
-
-// function printError(request, apiResponse, city) {
-//   document.querySelector('#showResponse').innerText = `There was an error accessing the weather data for ${city}: ${request.status} ${request.statusText}: ${apiResponse.message}`;
-// }
+function printError() {
+  document.getElementById("results-div").innerText = `There was an error accessing the data.`;
+}
 
 function getRgb(hex) {
   const r = parseInt(hex.slice(1, 3), 16);
@@ -114,5 +111,15 @@ function handleFormSubmission(event) {
 }
 
 window.addEventListener("load", function() {
+
   document.querySelector("form#clothing").addEventListener("submit", handleFormSubmission);
+
+  document.getElementById("shoe1").src="./assets/images/Nike-Dunk-Low-Reverse-Brazil.jpeg";
+  document.getElementById("shoe2").src="./assets/images/vintageboots.jpeg";
+  document.getElementById("hat1").src="./assets/images/flipsidehatsclassicecobeanie.jpeg";
+  document.getElementById("hat2").src="./assets/images/neweracap.jpeg";
+  document.getElementById("shirt1").src="./assets/images/davidvintagetshirt.jpg";
+  document.getElementById("shirt2").src="./assets/images/vintagebuttonupshirt.jpg";
+  document.getElementById("jacket1").src="./assets/images/outerwearwindbreaker.jpg";
+  document.getElementById("jacket2").src="./assets/images/outerwearhoodie.jpg";
 });

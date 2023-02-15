@@ -79,3 +79,9 @@ fieldset-gear {
     clear: none;
     margin: 2px 0 0 2px;
   }
+
+  .thumbnail {
+    height: auto;
+    width: 100px;
+    margin: auto;
+  }

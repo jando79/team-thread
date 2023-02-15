@@ -36,10 +36,8 @@ function printElements(colours) {
   title.style.background = "linear-gradient(to left top, rgb("+colours[1].toString()+"), white";
   let submitButton = document.getElementById("submit-button");
   submitButton.style.background = "linear-gradient(to left top, rgb("+colours[1].toString()+"), white";
-  let colorPick = document.getElementById("color-pick");
-  colorPick.style.background = "linear-gradient(to left top, rgb("+colours[2].toString()+"), white";
-  let gearDiv = document.getElementById("gear");
-  gearDiv.style.background = "linear-gradient(to left top, rgb("+colours[2].toString()+"), white";
+  let form = document.getElementById("clothing");
+  form.style.background = "linear-gradient(to left top, rgb("+colours[2].toString()+"), white";
   let results = document.getElementById("results-div");
   results.style.background = "linear-gradient(to left top, rgb("+colours[3].toString()+"), white";
   let shoeDiv = document.getElementById("shoe-selection");

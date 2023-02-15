@@ -21,7 +21,7 @@ function getPalette(color1, color2, color3) {
       console.log(palette);
       printElements(palette);
     } else {
-      printError();
+      // printError();
       console.log(`${request.status}${result}`);
     }
   };
@@ -38,8 +38,6 @@ function printElements(colours) {
     div.style.width = "100px";
     div.style.height = "100px";
     div.style.background="rgb("+colours[i].toString()+")";
-    div.innerHTML=colours[i];
-    div.style.color="white"
     document.getElementById("results-div").appendChild(div);
   }
 }
@@ -52,7 +50,6 @@ function getRgb(hex) {
   const r = parseInt(hex.slice(1, 3), 16);
   const g = parseInt(hex.slice(3, 5), 16);
   const b = parseInt(hex.slice(5, 7), 16);
-  // return {r, g, b} // return an object
   return [ r, g, b ];
 }
 

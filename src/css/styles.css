@@ -114,7 +114,7 @@ fieldset-gear {
   }
 
   .thumbnail {
-    height: 100px;
+    height: auto;
     width: 100px;
     margin: auto;
   }

@@ -108,7 +108,6 @@ window.addEventListener("load", function() {
   document.getElementById("hat2").src="./assets/images/neweracap.jpeg";
   document.getElementById("shirt1").src="./assets/images/davidvintagetshirt.jpg";
   document.getElementById("shirt2").src="./assets/images/vintagebuttonupshirt.jpg";
-
-  // document.getElementById("jacket1").src="./assets/images/Nike-Dunk-Low-Reverse-Brazil.jpeg";
-  // document.getElementById("jacket2").src="./assets/images/Nike-Dunk-Low-Reverse-Brazil.jpeg";
+  document.getElementById("jacket1").src="./assets/images/outerwearwindbreaker.jpg";
+  document.getElementById("jacket2").src="./assets/images/outerwearhoodie.jpg";
 });

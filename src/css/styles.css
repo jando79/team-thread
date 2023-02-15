@@ -3,9 +3,10 @@
 }
 
 body {
-  background-color: blanchedalmond;
+  background: linear-gradient(45deg, rgba(245, 186, 245, 0.884), rgba(245, 193, 52, 0.839));
   margin: 20px;  
 }
+
 
 h1 {
   text-align: center;
@@ -18,7 +19,7 @@ h1 {
 #color-pick label {
   display: inline-block;
   clear: left;  
-  width: 350px;
+  width: 250px;
   font-family: Arial;
   font-style: italic;
   font-weight: 550;
@@ -42,17 +43,12 @@ h1 {
     margin-bottom: 0.2em;
 }
 
-.clothing select {
-  margin-right: 0.2em;
+/* .clothing-size {
   font-family: Arial;
   font-style: italic;
   font-weight: 550;
 }
-.clothing-size {
-  font-family: Arial;
-  font-style: italic;
-  font-weight: 550;
-}
+
 fieldset-head-toes{
   overflow: hidden
   }
@@ -82,7 +78,7 @@ fieldset-head-toes{
     float: left;
     clear: none;
     margin: 0px 4em 0px 2px;
-  }
+  } */
 
 fieldset-gear {
   overflow: hidden

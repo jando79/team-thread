@@ -1,15 +1,14 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-// import GetPalette from './js/getpalette.js';
 
 // Business Logic
   
-function getPalette(color1, color2, color3) {
+function getPalette(color) {
   const url = "http://colormind.io/api/";
   let data = {
     model : "default",
-    input :[color1, color2, color3,"N","N"]
+    input :[color,"N","N","N","N"]
   };
   
   let palette;
@@ -18,11 +17,9 @@ function getPalette(color1, color2, color3) {
   request.onreadystatechange = function(result) {
     if(request.readyState == 4 && request.status == 200) {
       palette = JSON.parse(request.responseText).result;
-      console.log(palette);
       printElements(palette);
     } else {
       // printError();
-      console.log(`${request.status}${result}`);
     }
   };
   request.open("POST", url, true);
@@ -33,14 +30,29 @@ function getPalette(color1, color2, color3) {
 
 function printElements(colours) {
   document.getElementById("results-div").innerHTML = "";
-  for (let i = 0; i <= 4; i++) {
-    let div = document.createElement("div");
-    div.style.width = "100px";
-    div.style.height = "100px";
-    div.style.background="rgb("+colours[i].toString()+")";
-    document.getElementById("results-div").appendChild(div);
+ 
+  // let body = document.querySelector("body");
+  // body.style.background = "linear-gradient(45deg, rgb("+colours[0].toString()+"))";
+
+
+  let header = document.querySelector("h1");
+  header.style.background = "rgb("+colours[0].toString()+")";
+  let colorPick = document.getElementById("color-pick");
+  colorPick.style.background = "rgb("+colours[2].toString()+")";
+  let gearDiv = document.getElementById("gear");
+  gearDiv.style.background = "rgb("+colours[2].toString()+")";
+  let results = document.getElementById("results-div");
+  results.style.background = "rgb("+colours[3].toString()+")";
+  let shoeDiv = document.getElementById("shoe-selection");
+  shoeDiv.style.background = "rgb("+colours[4].toString()+")";
+  let hatDiv = document.getElementById("hat-selection");
+  hatDiv.style.background = "rgb("+colours[4].toString()+")";
+  let innerWearDiv = document.getElementById("inner-wear-selection");
+  innerWearDiv.style.background = "rgb("+colours[4].toString()+")";
+  let outerWearDiv = document.getElementById("outer-wear-selection");
+  outerWearDiv.style.background = "rgb("+colours[4].toString()+")";
   }
-}
+
 
 // function printError(request, apiResponse, city) {
 //   document.querySelector('#showResponse').innerText = `There was an error accessing the weather data for ${city}: ${request.status} ${request.statusText}: ${apiResponse.message}`;
@@ -82,16 +94,8 @@ function handleFormSubmission(event) {
   hideResults();
   showResults();
   const keyColor = document.getElementById("color1").value;
-  const accentColor1 = document.getElementById("color2").value;
-  const accentColor2 = document.getElementById("color3").value;
-
-  let color1 = getRgb(keyColor);
-  let color2 = getRgb(accentColor1);
-  let color3 = getRgb(accentColor2);
-  getPalette(color1, color2, color3);
-  console.log(color1);
-  console.log(color2);
-  console.log(color3);
+  let color = getRgb(keyColor);
+  getPalette(color);
 }
 
 window.addEventListener("load", function() {

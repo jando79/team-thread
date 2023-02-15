@@ -1,6 +1,7 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
+import './assets/images/vintagebuttonupshirt.jpg';
 // import GetPalette from './js/getpalette.js';
 
 // Business Logic
@@ -39,7 +40,7 @@ function printElements(colours) {
     div.style.height = "100px";
     div.style.background="rgb("+colours[i].toString()+")";
     div.innerHTML=colours[i];
-    div.style.color="white"
+    div.style.color="white";
     document.getElementById("results-div").appendChild(div);
   }
 }
@@ -99,4 +100,6 @@ function handleFormSubmission(event) {
 
 window.addEventListener("load", function() {
   document.querySelector("form#clothing").addEventListener("submit", handleFormSubmission);
+  document.getElementById("shoe1").src="./assets/images/Nike-Dunk-Low-Reverse-Brazil.jpeg";
+  
 });

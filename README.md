@@ -21,6 +21,7 @@ _A web application that prompts users to choose their "mood" and clothing needs.
 * 🥼 _Install all Node packages and dependencies with the command ``npm install``_
 * 👖 _Build the project using webpack with ``npm run build``_
 * 🥼 _Package and open the project in your browser using ``npm run start``_
+* 👖 Or check the site out here: <https://jando79.github.io/team-thread>
 
 ## Known Bugs
 

@@ -2,8 +2,8 @@
     "name": "threads",
     "version": "1.0.0",
     "repository": {
-    "url": "git+https://github.com/jando79/team-thread.git"
- },
+        "url": "git+https://github.com/jando79/team-thread.git"
+    },
     "main": "index.js",
     "scripts": {
         "build": "webpack --mode=development",

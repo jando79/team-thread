@@ -10,7 +10,7 @@ _A web application that prompts users to choose their "mood" and clothing needs.
 
 * 👟 JavaScript
 * 👟 HTML / CSS
-* 👟 Boostrap
+* 👟 Bootstrap
 * 👟 Webpack
 * 👟 ColorMind API
 
@@ -26,6 +26,8 @@ _A web application that prompts users to choose their "mood" and clothing needs.
 
 * 🥾 No known bugs.
 * 🥾 More types of apparel and apparel options could be added!
+
+* 🥾 If there are any questions or concerns please reach out to: Eliot <eliot.lauren@gmail.com>, Mesha <madsketchz@gmail.com>, Molly <mollyrdonegan@gmail.com>, Sarah <sarah.andyshak@gmail.com>, Luckie <eluckie.d@gmail.com>, or David <jandron1211@gmail.com>.
 
 ## License
 

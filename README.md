@@ -25,7 +25,7 @@ _A web application that prompts users to choose their "mood" and clothing needs.
 
 ## Known Bugs
 
-* 🥾 No known bugs.
+* 🥾 Our API doesn't function properly when hosted at Github Pages due to the https:// address.
 * 🥾 More types of apparel and apparel options could be added!
 
 * 🥾 If there are any questions or concerns please reach out to: Eliot <eliot.lauren@gmail.com>, Mesha <madsketchz@gmail.com>, Molly <mollyrdonegan@gmail.com>, Sarah <sarah.andyshak@gmail.com>, Luckie <eluckie.d@gmail.com>, or David <jandron1211@gmail.com>.

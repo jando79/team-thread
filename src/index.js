@@ -9,11 +9,9 @@ function getPalette(color) {
   let data = {
     model : "default",
     input :[color,"N","N","N","N"]
-  };
-  
+  }
   let palette;
   let request = new XMLHttpRequest();
-  
   request.onreadystatechange = function() {
     if(request.readyState == 4 && request.status == 200) {
       palette = JSON.parse(request.responseText).result;
@@ -22,7 +20,7 @@ function getPalette(color) {
     } else {
       printError();
     }
-  };
+  }
   request.open("POST", url, true);
   request.send(JSON.stringify(data));
 }
@@ -89,7 +87,6 @@ function showResults() {
   let hatSelection = document.getElementById("2");
   let innerWearSelection = document.getElementById("3");
   let outerWearSelection = document.getElementById("4");
-
   if (shoeSelection.checked === true) {
     document.querySelector('#shoe-selection').removeAttribute("class");
   } if (hatSelection.checked === true) {
@@ -111,9 +108,7 @@ function handleFormSubmission(event) {
 }
 
 window.addEventListener("load", function() {
-
   document.querySelector("form#clothing").addEventListener("submit", handleFormSubmission);
-
   document.getElementById("shoe1").src="./assets/images/converse.png";
   document.getElementById("shoe2").src="./assets/images/boots.png";
   document.getElementById("hat1").src="./assets/images/beanie.png";
@@ -122,6 +117,5 @@ window.addEventListener("load", function() {
   document.getElementById("shirt2").src="./assets/images/outwearbuttonup.png";
   document.getElementById("jacket1").src="./assets/images/windbreaker copy.png";
   document.getElementById("jacket2").src="./assets/images/hoodie.png";
-  
   document.getElementById("christopherWalkin").src="./assets/images/Christopher_Walkin.png";
-});
+})

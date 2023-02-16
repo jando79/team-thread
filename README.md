@@ -1,6 +1,6 @@
 # 🧢 Christopher Walk-In Closet 🧢
 
-##### By 🎩_David Jandron_🎩 & 🎩_Eliot Gronstal_🎩 & 🎩_E. Luckie_🎩 & 🎩_Mesha Devan_🎩 & 🎩_Molly Donegan_🎩 & 🎩_Sarah Andyshak_🎩
+##### By 🎩David Jandron🎩 & 🎩Eliot Gronstal🎩 & 🎩E. Luckie🎩 & 🎩Mesha Devan🎩 & 🎩Molly Donegan🎩 & 🎩Sarah Andyshak🎩
 
 #### _Description_
 

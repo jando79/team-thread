@@ -114,12 +114,14 @@ window.addEventListener("load", function() {
 
   document.querySelector("form#clothing").addEventListener("submit", handleFormSubmission);
 
-  document.getElementById("shoe1").src="./assets/images/Nike-Dunk-Low-Reverse-Brazil.jpeg";
-  document.getElementById("shoe2").src="./assets/images/vintageboots.jpeg";
-  document.getElementById("hat1").src="./assets/images/flipsidehatsclassicecobeanie.jpeg";
-  document.getElementById("hat2").src="./assets/images/neweracap.jpeg";
-  document.getElementById("shirt1").src="./assets/images/davidvintagetshirt.jpg";
-  document.getElementById("shirt2").src="./assets/images/vintagebuttonupshirt.jpg";
-  document.getElementById("jacket1").src="./assets/images/outerwearwindbreaker.jpg";
-  document.getElementById("jacket2").src="./assets/images/outerwearhoodie.jpg";
+  document.getElementById("shoe1").src="./assets/images/converse.png";
+  document.getElementById("shoe2").src="./assets/images/boots.png";
+  document.getElementById("hat1").src="./assets/images/beanie.png";
+  document.getElementById("hat2").src="./assets/images/newerahats.png";
+  document.getElementById("shirt1").src="./assets/images/davidtshirt.png";
+  document.getElementById("shirt2").src="./assets/images/outwearbuttonup.png";
+  document.getElementById("jacket1").src="./assets/images/windbreaker copy.png";
+  document.getElementById("jacket2").src="./assets/images/hoodie.png";
+  
+  document.getElementById("christopherWalkin").src="./assets/images/Christopher_Walkin.png";
 });

@@ -1,36 +1,31 @@
-# Threads
+# 🧢 Christopher Walk-In Closet 🧢
 
-##### By _David Jandron_ & _Eliot Gronstal_ & _E. Luckie_ & _Mesha Devan_ & _Molly Donegan_ & _Sarah Andyshak_
+##### By 🎩_David Jandron_🎩 & 🎩_Eliot Gronstal_🎩 & 🎩_E. Luckie_🎩 & 🎩_Mesha Devan_🎩 & 🎩_Molly Donegan_🎩 & 🎩_Sarah Andyshak_🎩
 
 #### _Description_
 
-_A web application that helps the user cordinate..._
+_A web application that prompts users to choose their "mood" and clothing needs. The site styles the website with a custom color palette based on their chosen color and the ColorMind API, and returns clothing suggestions based on their input from the gear form._
 
 ## Technologies Used
 
-* JavaScript
-* HTML / CSS
-* Boostrap
-* Babel
-* ES Lint
-* Node.js
-* Webpack
-* Sneaks API
-
+* 👟 JavaScript
+* 👟 HTML / CSS
+* 👟 Boostrap
+* 👟 Webpack
+* 👟 ColorMind API
 
 ## Setup/Installation Requirements
 
-* _Clone this repository to your desktop_
-* _Navigate to the top level of the directory_
-* _Install all Node packages and dependencies with the command ``npm install``_
-* _Build the project using webpack with ``npm run build``_
-* _Package and open the project in your browser using ``npm run start``_
-* _Lint JS files in the ``src`` folder with ``npm run lint``_
-* _Run tests with Jest using ``npm run test``_
+* 🥼 _Clone this repository to your desktop_
+* 👖 _Navigate to the top level of the directory_
+* 🥼 _Install all Node packages and dependencies with the command ``npm install``_
+* 👖 _Build the project using webpack with ``npm run build``_
+* 🥼 _Package and open the project in your browser using ``npm run start``_
 
 ## Known Bugs
 
-* NA
+* 🥾 No known bugs.
+* 🥾 More types of apparel and apparel options could be added!
 
 ## License
 
